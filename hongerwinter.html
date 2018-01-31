@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hongerwinter</title>
+	<link rel="stylesheet" href="Stylesheet/stylesheet.css">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Bold.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Light.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Regular.otf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+
+		<!--	De code voor de navigatie, deze is voor iedere pagina hetzelfde -->
+		<nav>
+			<ul class="navigation">
+				<li>
+					<a class="primarynav" href="index.html"><img class="navimg" src="Stylesheet/images/transavia-logo-stacked-white.svg" alt="logo"></a>
+				</li>
+				<li class="primarynav"><a href="index.html">Home</a></li>
+				<li class="primarynav"><a href="verhalen.html">Vind je verhaal</a></li>
+				<li class="primarynav"><a href="login.html">Login</a></li>
+				<li>
+					<a href="index.html"><img src="Stylesheet/images/homeic.png" alt="Home"></a>
+				</li>
+				<li>
+					<a href="verhalen.html"><img src="Stylesheet/images/stories.png" alt="Verhalen"></a>
+				</li>
+				<li>
+					<a href="login.html"><img src="Stylesheet/images/login.png" alt="Login"></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<!--	In de main van de detail pagina's staan alle afbeeldingen, verborgen als het niet wordt weergegeven op het device. -->
+
+		<img src="Stylesheet/images/hongermibile.png" alt="mobile">
+		<img src="Stylesheet/images/hongeripad.png" alt="ipad">
+		<img src="Stylesheet/images/hongerweb.png" alt="web">
+
+		<!--Dit is een micro interactie -->
+		<div class="liker">
+			<h1>Vind je dit verhaal leuk?</h1>
+			<button class="cloudlike">
+				<img src="Stylesheet/images/cloud.png" alt=""></button>
+		</div>
+
+		<!--Hier krijgt de gebruiker een voorproefje van de filter functie -->
+		<section class="verhalen">
+			<form class="slider" action="verhaal1.html">
+				<h1>Vind een verhaal wat bij je past :</h1>
+				<p>Verplaats de slider naar hetgene wat jou het meeste aanspreekt : </p>
+				<label for="vv">
+					vrolijk
+					<input type="range" id="vv"> verdrietig
+				</label>
+				<label for="gs">
+					grappig
+					<input type="range" id="gs"> serieus
+				</label>
+				<label for="kl">
+					kort
+					<input type="range" id="kl"> lang
+				</label>
+				<a class="mainbutton" href="verhalen.html">Zoek</a>
+				<a href="verhalen.html"> Of zoek uitgebreider een verhaal</a>
+			</form>
+
+			<!--Hier krijgt de gebruiker andere suggesties-->
+			<aside class="compare">
+				<h1> Meer zoals dit: </h1>
+				<a href="hongerwinter.html"><img class="more" src="Stylesheet/images/promohonger.png" alt="promohonger"></a>
+				<a href="moe.html"><img class="more" src="Stylesheet/images/moepromo.png" alt="promomoe"></a>
+				<a href="nichterig.html"><img class="more" src="Stylesheet/images/promonicht.png" alt=""></a>
+			</aside>
+		</section>
+	</main>
+
+	<!--De footer is bij elke pagina hetzelfde-->
+
+	<footer>
+		<p>&copy; Maxime Kramer - Project Web 2017</p>
+	</footer>
+
+	<!--	Om de javascript uit te voeren wordt hier het script gelinkt.-->
+
+	<script src="scripts/script.js"></script>
+
+</body>
+
+</html>

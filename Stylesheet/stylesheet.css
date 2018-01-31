@@ -1,0 +1,400 @@
+		/*Algemene css*/
+		
+		@font-face {
+			font-family: 'Nexa Light';
+			src: url(fonts/Nexa%20Light.otf);
+		}
+		
+		@font-face {
+			font-family: 'Nexa Bold';
+			src: url(fonts/Nexa%20Bold.otf);
+		}
+		
+		@font-face {
+			font-family: 'Nexa Regular';
+			src: url(fonts/Nexa%20Regular.otf);
+		}
+		
+		body {
+			font-family: "Nexa Light";
+			background-color: #f3e5d8;
+		}
+		
+		h1,
+		legend {
+			display: block;
+			font-family: "Nexa Bold";
+			word-spacing: 0.25em;
+			text-indent: 1.25em;
+			font-size: 1.4em;
+			text-align: center;
+		}
+		
+		h2 {
+			font-size: 1.4em;
+			display: block;
+		}
+		
+		a {
+			font-family: "Nexa Bold";
+		}
+		/*Footer onderaan de pagina vast zetten,
+bron: http: //www.websonic.nl/tutorials/websitecss/css_divonderkantvenster.php*/
+		
+		footer {
+			position: fixed;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			color: #2800a0;
+			background-image: url(images/sea.png);
+			background-size: contain;
+		}
+		/*	Navigate*/
+		
+		.navigation {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		}
+		
+		nav a {
+			color: #00d66c;
+			font-size: 1.5em;
+			line-height: 3em;
+			margin-left: 0.5em;
+			text-decoration: none;
+		}
+		
+		li {
+			list-style: none;
+		}
+		
+		nav img {
+			width: 3em;
+			padding: 0.3em;
+		}
+		/*navigatie van de desktop versie uitschakelen */
+		
+		.primarynav {
+			display: none;
+		}
+		/*Knoppen & Formstates */
+		
+		.cloudlike {
+			background-color: transparent;
+		}
+		
+		.mainbutton,
+		div >button,
+		.planeFly {
+			display: block;
+			font-size: 1.1em;
+			font-family: 'Nexa light';
+			border-radius: 0.5rem;
+			border-style: none;
+			background-color: #ff3268;
+			width: 70%;
+			margin: 0.5rem auto;
+			padding: 0.2rem;
+			color: white;
+			text-decoration: none;
+			text-align: center;
+		}
+		
+		.mainbutton:hover,
+		input[type=text]:hover,
+		div > button {
+			background-color: #f7f7f7;
+		}
+		
+		legend:first-child:hover {
+			color: #00d66c;
+		}
+		
+		input[type=password]:invalid {
+			border-color: #F5B118;
+		}
+		
+		input:focus {
+			background-color: #f7f7f7;
+			border: solid 3px #00d66c;
+		}
+		
+		input:active {
+			background-color: #f2e3d7;
+		}
+		
+		nav img:active {
+			transform: scale(1.2);
+		}
+		/*Links */
+		
+		h2>a {
+			color: #ff3268;
+			text-decoration: none;
+		}
+		/*	*Home : index.html*/
+		
+		.carrousel {
+			display: borderbox;
+			padding-top: 8rem;
+			padding-bottom: 18rem;
+			background-image: url(images/planehelft.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		aside {
+			max-width: 450px;
+			background-color: #fff;
+			border-radius: 1.5em;
+			margin: 1rem auto;
+			padding: 0.3rem;
+			align-content: center;
+		}
+		
+		article {
+			display: block;
+			max-width: 450px;
+			border-radius: 1.5em;
+			background-color: #fff;
+			margin: 1rem auto;
+			padding: 1rem;
+			text-align: center;
+		}
+		
+		.carrousel {
+			display: flex;
+			flex-direction: row;
+			overflow-x: scroll;
+		}
+		
+		section img {
+			width: 8em;
+			height: 12em;
+		}
+		
+		div h2 {
+			font-family: "Nexa Bold";
+			font-size: 1.7em;
+			display: flex;
+			border-radius: 1.5rem;
+			padding: 1.3rem;
+			background-color: #f7f7f7;
+			text-align: right;
+		}
+		
+		.carrousel img {
+			border-radius: 1.5rem;
+			margin: 2rem;
+			border: #2800a0 solid;
+		}
+		/*Vind je verhaal : verhalen.html */
+		
+		form {
+			max-width: 26em;
+			border-radius: 1.5em;
+			background-color: #fff;
+			margin: 1rem auto;
+			padding: 1rem;
+			text-align: center;
+		}
+		
+		legend {
+			font-size: 1.4em;
+			line-height: 1.5;
+		}
+		
+		article > a {
+			display: block;
+			color: black;
+		}
+		/* Verhaal detail: moe.html, nichterig.html, hongerwinter.html en verhaal1.html */
+		
+		img[alt=web],
+		img[alt=ipad] {
+			display: none;
+		}
+		
+		img[alt=mobile] {
+			width: 100%;
+		}
+		
+		.more {
+			width: 6em;
+			height: 6em;
+			border-radius: 1.5em;
+			margin: 0.4rem;
+		}
+		/*Inloggen en aanmelden */
+		
+		fieldset {
+			text-align: center;
+			border: 1.5em;
+			margin: 1rem;
+		}
+		
+		.input,
+		form label {
+			display: block;
+		}
+		
+		.gender {
+			display: inline;
+			font-size-adjust: 1.5em;
+		}
+		/*Microinteracties vormgeving*/
+		
+		div button img {
+			width: 5rem;
+		}
+		
+		div button {
+			width: auto;
+		}
+		/*RESPONSIVE : Hier zorg ik dat de content op een andere manier wordt weergegeven op verschillende devices. Ik werk vanuit mobile */
+		/*Tablets: Wanneer de site op een tablet wordt bekeken gebeurt er dit */
+		
+		@media only screen and (min-width:768px) and (max-width:992px) {
+			/*navigatie*/
+			nav img {
+				display: none;
+			}
+			.primarynav {
+				display: flex;
+			}
+			/*	Algemeen */
+			article,
+			form {
+				margin: 1rem auto;
+			}
+			.slider {
+				min-width: 26em;
+				margin: 1rem auto;
+			}
+			/*Detail pagina, de verhalen*/
+			img[alt=ipad] {
+				display: inline;
+				width: 100%;
+			}
+			img[alt=mobile] {
+				display: none;
+			}
+			*/ section a img {
+				text-align: center;
+			}
+			/*	Inloggen & registreren*/
+			form {
+				margin: auto;
+			}
+		}
+		/*Desktop: Wanneer de site op een desktop wordt bekeken gebeurt er dit */
+		
+		@media only screen and (min-width: 992px) {
+			/*navigatie */
+			nav img {
+				display: none;
+			}
+			.primarynav {
+				display: flex;
+			}
+			/*	Algemeen*/
+			form {
+				margin: auto;
+			}
+			.slider {
+				min-width: 26em;
+			}
+			/*Home */
+			.containergrid {
+				display: flex;
+				width: 100vw;
+			}
+			.carrousel {
+				display: borderbox;
+				padding-top: 7rem;
+				padding-bottom: 18rem;
+				background-image: url(images/planehelft.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			/*Detail pagina, de verhalen*/
+			main {
+				text-align: center;
+			}
+			img[alt=web] {
+				display: block;
+				width: 100%;
+			}
+			img[alt=mobile] {
+				display: none;
+			}
+			img[alt=ipad] {
+				display: none;
+			}
+			.compare,
+			.help {
+				display: inline-flex;
+			}
+			.compare {
+				max-height: 10em;
+			}
+			/*	Verhalen, zoekpagina*/
+			.verhalen {
+				display: flex;
+				width: 80vw;
+				margin: auto;
+			}
+			/*	Inloggen & registreren*/
+			form,
+			.aside,
+			.compare,
+			article {
+				margin: 2em 1em;
+			}
+			main.register form,
+			.login {
+				margin: auto;
+			}
+		}
+		/*Micro interacties*/
+		/*Een verhaal leuk vinden, toevoegen aan 'op de wolken'*/
+		
+		div.liker {
+			position: relative;
+			transition: all 0.5s;
+		}
+		
+		.liken {
+			transform: scale(1.3) rotate(20deg);
+		}
+		
+		div h2 a {
+			position: relative;
+			transition: all 0.5s;
+		}
+		/*Het raam verwijzen naar de titel*/
+		
+		.window {
+			background-color: transparent;
+			width: 7em;
+			margin: 0.3rem auto;
+			transition: all 0.4s;
+		}
+		
+		div h2 a.open {
+			transform: rotate(-360deg);
+		}
+		/*Het vliegtuig geeft feedback wanneer de gebruiker de actie heeft uitgevoerd*/
+		
+		main img.status {
+			margin-left: 0%;
+			position: relative;
+			width: 7em;
+			transition-timing-function: ease-in;
+		}
+		
+		img.status.fly {
+			transform: translateX(100%);
+		}

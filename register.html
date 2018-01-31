@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Meld je aan</title>
+	<link rel="stylesheet" href="Stylesheet/stylesheet.css">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Bold.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Light.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Regular.otf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<header>
+		<!--	De code voor de navigatie, deze is voor iedere pagina hetzelfde -->
+		<nav>
+			<ul class="navigation">
+				<li>
+					<a class="primarynav" href="index.html"><img class="navimg" src="Stylesheet/images/transavia-logo-stacked-white.svg" alt="logo"></a>
+				</li>
+				<li class="primarynav"><a href="index.html">Home</a></li>
+				<li class="primarynav"><a href="verhalen.html">Vind je verhaal</a></li>
+				<li class="primarynav"><a href="login.html">Login</a></li>
+				<li>
+					<a href="index.html"><img src="Stylesheet/images/homeic.png" alt="Home"></a>
+				</li>
+				<li>
+					<a href="verhalen.html"><img src="Stylesheet/images/stories.png" alt="Verhalen"></a>
+				</li>
+				<li>
+					<a href="login.html"><img src="Stylesheet/images/login.png" alt="Login"></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="register">
+
+		<!--	Hier begint het eerste formulier, de gebruiker kan zijn/haar gegevens invoeren en zijn/haar voorkeuren aangeven-->
+
+		<form action="index.html">
+			<fieldset>
+				<legend>Vul je gegevens in :</legend>
+				<label for="name">Voornaam
+					<input type="text" id="name">
+				</label>
+				<label for="lastname">Achternaam
+					<input type="text" id="lastname">
+				</label>
+				<label for="email">E-mail adres
+					<input type="email" id="email">
+				</label>
+				<label for="birthdate">Geboortedatum
+					<input type="date" id="birthdate">
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<label class="gender"> Geslacht </label>
+				<label class="gender" for="gendermale">Man</label>
+				<input type="radio" id="gendermale" name="gender">
+				<label class="gender" for="genderfemale"> Vrouw</label>
+				<input type="radio" id="genderfemale" name="gender">
+			</fieldset>
+
+			<fieldset>
+				<legend>Wat spreekt je aan?</legend>
+				<label for="hobby1">
+					<input type="checkbox" id="hobby1"> Sport
+				</label>
+				<label for="hobby2">
+					<input type="checkbox" id="hobby2"> Dieren
+				</label>
+				<label for="hobby3">
+					<input type="checkbox" id="hobby3"> Kunst
+				</label>
+				<label for="hobby4">
+					<input type="checkbox" id="hobby4"> Muziek
+				</label>
+				<label for="hobby5">
+					<input type="checkbox" id="hobby5"> Koken
+				</label>
+				<label for="color">Wat vind je een mooie kleur?
+					<input type="color" id="color">
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Waar ga je naar toe?</legend>
+				<label for="bestem">Waar ga je naar toe?
+					<input type="text" id="bestem">
+				</label>
+				<label for="stay">Waar verblijf je?
+					<input type="text" id="stay">
+				</label>
+				<label for="during">Hoelang blijf je hier?
+					<input type="number" id="during"> weken.
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<a class="mainbutton" href="index.html">Meld je aan</a>
+			</fieldset>
+		</form>
+
+	</main>
+
+	<!--De footer is bij elke pagina hetzelfde-->
+
+	<footer>
+		<p>&copy; Maxime Kramer - Project Web 2017</p>
+	</footer>
+</body>
+
+</html>

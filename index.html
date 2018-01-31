@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Overzichtspagina</title>
+	<link rel="stylesheet" href="Stylesheet/stylesheet.css">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Bold.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Light.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Regular.otf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<header>
+
+		<!--	De code voor de navigatie, deze is voor iedere pagina hetzelfde -->
+		<nav>
+			<ul class="navigation">
+
+				<li class="primarynav"><a href="index.html">Home</a></li>
+				<li class="primarynav"><a href="verhalen.html">Vind je verhaal</a></li>
+				<li class="primarynav"><a href="login.html">Login</a></li>
+				<li>
+					<a href="index.html"><img src="Stylesheet/images/homeic.png" alt="Home"></a>
+
+				</li>
+				<li>
+					<a href="verhalen.html"><img src="Stylesheet/images/stories.png" alt="Verhalen"></a>
+				</li>
+				<li>
+					<a href="login.html"><img src="Stylesheet/images/login.png" alt="Login"></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main>
+
+		<!--	Met de button kan de gebruiker snel terug naar het laatst gelezen verhaal-->
+
+		<a id="verder" class="mainbutton" href="verhaal1.html">Lees "Beroemd" verder ... </a>
+
+		<!--		Hier begint de carrousel met de uitgelichte en vormgegeven verhalen-->
+
+		<section>
+			<div class="carrousel">
+				<h2><a href="moe.html">Moe</a></h2>
+				<button class="window"><img class="window" src="Stylesheet/images/moepre.png" alt=""></button>
+				<h2><a href="hongerwinter.html">Hongerwinter</a></h2>
+				<a class="window" href="hongerwinter.html"><img src="Stylesheet/images/hongerpre.png" alt=""></a>
+				<h2><a href="nichterig.html">Nichterig</a></h2>
+				<a class="window" href="nichterig.html"><img src="Stylesheet/images/nichtpre.png" alt=""></a>
+				<h2><a href="verhaal1.html">Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</a></h2>
+				<a class="window" href="verhaal1.html"><img src="Stylesheet/images/langpre.png" alt=""></a>
+			</div>
+		</section>
+
+		<!--		Aanbevolen verhalen-->
+
+		<h1>Aanbevolen verhalen voor jou :</h1>
+
+		<section class="containergrid">
+			<article>
+				<h2><a href="verhaal1.html">Van vader tot zoon</a></h2>
+				<p>Je ligt vredig in je wagen te slapen als ik de bus uitstap op die druilerige dag in februari van het jaar 2011. In je groene wagentje. (Daar wil je inmiddels, nu ik dit schrijf, niet meer in. Je wilt zelf lopen of op je fietsje voortgeduwd worden.) Het is guur weer. Een chagrijnig miezerregentje […]</p>
+			</article>
+			<article>
+				<h2><a href="verhaal1.html">Hongerwinter</a></h2>
+				<p>Mijn voeten en handen heb ik ingezwachteld tegen de kou. Kranten tegen m’n borst. Ik duw een handkar voort waarin mijn zoon vredig ligt te slapen. Centraal Station. De tramrails liggen er kaal bij. Het hout tussen de rails is al lang weggenomen. Ik word geacht het IJ over te steken om in de dorpen […]</p>
+			</article>
+			<article>
+				<h2><a href="verhaal1.html">Verrassing</a></h2>
+				<p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’ – ‘Goed zo. Lekker wandelweer?’[…]</p>
+			</article>
+			<article>
+				<h2><a href="verhaal1.html">Beroemd</a></h2>
+				<p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er […]</p>
+			</article>
+		</section>
+
+
+		<!--Hier krijgt de gebruiker een voorproefje van de filter functie -->
+
+		<form class="slider" action="verhaal1.html">
+			<h1>Vind een verhaal wat bij je past :</h1>
+			<label for="vv">
+				vrolijk
+				<input type="range" id="vv"> verdrietig
+			</label>
+			<label for="gs">
+				grappig
+				<input type="range" id="gs"> serieus
+			</label>
+			<label for="kl">
+				kort
+				<input type="range" id="kl"> lang
+			</label>
+
+			<a class="mainbutton" href="verhalen.html"> Zoek</a>
+
+			<a href="verhalen.html"> Of zoek uitgebreider een verhaal</a>
+		</form>
+
+	</main>
+
+	<!--De footer is bij elke pagina hetzelfde-->
+
+	<footer>
+		<p>&copy; Maxime Kramer - Project Web 2017</p>
+	</footer>
+	
+<!--	Om de javascript uit te voeren wordt hier het script gelinkt.-->
+	<script src="scripts/scriptnav.js"></script>
+
+</body>
+
+</html>

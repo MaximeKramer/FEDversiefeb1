@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="Stylesheet/stylesheet.css">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Bold.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Light.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Regular.otf">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+
+		<!--	De code voor de navigatie, deze is voor iedere pagina hetzelfde -->
+
+		<nav>
+			<ul class="navigation">
+				<li>
+					<a class="primarynav" href="index.html"><img class="navimg" src="Stylesheet/images/transavia-logo-stacked-white.svg" alt="logo"></a>
+				</li>
+				<li class="primarynav"><a href="index.html">Home</a></li>
+				<li class="primarynav"><a href="verhalen.html">Vind je verhaal</a></li>
+				<li class="primarynav"><a href="login.html">Login</a></li>
+				<li>
+					<a href="index.html"><img src="Stylesheet/images/homeic.png" alt="Home"></a>
+				</li>
+				<li>
+					<a href="verhalen.html"><img src="Stylesheet/images/stories.png" alt="Verhalen"></a>
+				</li>
+				<li>
+					<a href="login.html"><img src="Stylesheet/images/login.png" alt="Login"></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<!--	Dit is een deel van een micro interactie : Het vliegtuig wat naar voren zal vliegen wanneer de gebruiker zich heeft aangemeld-->
+
+		<img class="status" src="Stylesheet/images/planebackground.png" alt="plane">
+
+		<!--Hier begint het eerste formulier-->
+
+		<form class="login">
+			<fieldset>
+				<legend>Inloggen</legend>
+				<label class="input" for="naam"> Gebruikersnaam
+					<input type="text" name="Gebruikersnaam" id="naam">
+				</label>
+				<label class="input" for="password"> Wachtwoord
+					<input type="password" name="Wachtwoord" id="password" required>
+				</label>
+
+				<!--	Het tweede deel van de microinteractie, dit is de trigger.-->
+				<section>
+					<button class="planeFly">Log in</button>
+				</section>
+
+			</fieldset>
+			<fieldset>
+
+				<label for="staylogged">
+					<input type="checkbox" name="Onthoud gegevens" id="staylogged"> Ingelogd blijven </label>
+			</fieldset>
+			<fieldset> Nog geen account?
+				<a class="mainbutton" href="register.html">Meld je aan</a>
+			</fieldset>
+		</form>
+
+	</main>
+
+	<!--De footer is bij elke pagina hetzelfde-->
+
+	<footer>
+		<p>&copy; Maxime Kramer - Project Web 2017</p>
+	</footer>
+
+	<!--	Om de javascript uit te voeren wordt hier het script gelinkt.-->
+
+	<script src="scripts/verderscript.js"></script>
+</body>
+
+</html>

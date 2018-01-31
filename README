@@ -1,0 +1,11 @@
+READ ME 
+
+Op deze site kunnen reizigers die bij transavia een vlucht hebben geboekt verhalen lezen voor, tijdens en na hun reis. Dit doen ze tijdens het wachten, even tussendoor in de rij en tijdens een lange vlucht, vaart of rit. 
+
+Gebruikers kunnen een account aanmaken en zo verhalen toevoegen aan hun "op de wolken" collectie. Dit is een manier om aan te geven dat ze het verhaal leuk vinden.  Het leuk vinden doen ze op de detail pagina's (moe.html, nichterig.html, hongerwinter.html en verhaal1.html) door op het wolkje te klikken. Er volgt dan een microinteracties aangestuurd door het javascript bestand 'script.js'
+
+Op de overzichtspagina staan de aanbevolen en uitgelichte verhalen. De uitgelichte verhalen staan in de vliegtuigraampjes. Als er op het eerste raampje geklikt wordt wordt het duidelijk dat er op de titel moet worden geklikt door middel van een micro interacties, gecodeerd in het bestand 'scriptnav.js'
+
+De laatste microinteractie staat in het login.html, hier kan de gebruiker zich eenmalig aanmelden. De systeemstatus wordt begleid door het vliegtuig. Wanneer de gebruiker op 'login' klikt, vliegt het vliegtuig verder. Door deze feedback weet de gebruiker dat de actie voltooid is. 
+
+Deze website is responsive gemaakt, de gebruiker kan de site bezoeken op verschillende devices. De breakpoints liggen tussen mobile, tablet en desktop. 
